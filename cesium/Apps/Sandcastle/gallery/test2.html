@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Load GeoJSON or TopoJSON data and apply custom styling."
+    />
+    <meta
+      name="cesium-sandcastle-labels"
+      content="Showcases, Tutorials, DataSources"
+    />
+    <title>Cesium Demo</title>
+    <script type="text/javascript" src="../Sandcastle-header.js"></script>
+    <script
+      type="text/javascript"
+      src="../../../Build/CesiumUnminified/Cesium.js"
+      nomodule
+    ></script>
+    <script type="module" src="../load-cesium-es6.js"></script>
+  </head>
+  <body
+    class="sandcastle-loading"
+    data-sandcastle-bucket="bucket-requirejs.html"
+  >
+    <style>
+      @import url(../templates/bucket.css);
+    </style>
+    <div id="cesiumContainer" class="fullSize"></div>
+    <div id="loadingOverlay"><h1>Loading...</h1></div>
+    <div id="toolbar"></div>
+    <script id="cesium_sandcastle_script">
+      function startup(Cesium) {
+        "use strict";
+        //Sandcastle_Begin
+        Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0YTQ0MzRkZC0xNGE4LTRiMzEtODlmYS03Yjg3MzBiZDY1ZmIiLCJpZCI6Mzc1NDYsImlhdCI6MTYwNTE4NDI4N30.jqCXBqK9zD4paIsHFNk8D49VM9gHpxcXNC533Tx-UbA";
+var viewer = new Cesium.Viewer("cesiumContainer", {
+  animation: false,
+  timeline: false,
+});
+var imageryLayer;
+var mapid = [184921, 184919, 184937, 184938, 184939, 184940, 184943, 184963, 184944, 184945, 184946, 184947];
+var i = 0 ;
+var intid;
+Sandcastle.addToolbarButton("Pays-Info", function () {
+          viewer.dataSources.add(
+            Cesium.GeoJsonDataSource.load(
+              "../../SampleData/statpays.geojson",
+              {
+                stroke: Cesium.Color.BLACK,
+                fill: Cesium.Color.PINK.withAlpha(0.01),
+                strokeWidth: 3,
+              }
+            )
+          );
+        });
+Sandcastle.addDefaultToolbarButton("animation: ON", function () {
+  intid = setInterval(myTimer, 700);
+  function myTimer() {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[++i] })
+);
+  if ( i === 11) {
+    i = 0 ;
+}    
+}
+});
+
+Sandcastle.addDefaultToolbarButton("animation:OFF", function () {
+  clearInterval(intid);
+});
+
+Sandcastle.addDefaultToolbarButton("Janvier", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[0] })
+);
+});
+
+Sandcastle.addDefaultToolbarButton("Fevrier", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[1] })
+);
+});
+
+Sandcastle.addDefaultToolbarButton("Mars", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[2] })
+);
+});
+
+Sandcastle.addDefaultToolbarButton("Avril", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[3] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Mai", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[4] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Juin", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[5] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Juillet", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[6] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Aout", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[7] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Septembre", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[8] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Octobre", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[9] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Novembre", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[10] })
+);
+});
+Sandcastle.addDefaultToolbarButton("Decembre", function () {
+  imageryLayer = viewer.imageryLayers.addImageryProvider(
+  new Cesium.IonImageryProvider({ assetId: mapid[11] })
+);
+});
+
+        
+		
+        //Reset the scene when switching demos.
+        Sandcastle.reset = function () {
+          viewer.dataSources.removeAll();
+
+          //Set the camera to a US centered tilted view and switch back to moving in world coordinates.
+          viewer.camera.lookAt(
+            Cesium.Cartesian3.fromDegrees(12.0, 32.0),
+            new Cesium.Cartesian3(0.0, -4790000.0, 5000000.0)
+          );
+          viewer.camera.lookAtTransform(Cesium.Matrix4.IDENTITY);
+        };
+        //Sandcastle_End
+        Sandcastle.finishedLoading();
+      }
+      if (typeof Cesium !== "undefined") {
+        window.startupCalled = true;
+        startup(Cesium);
+      }
+    </script>
+  </body>
+</html>
