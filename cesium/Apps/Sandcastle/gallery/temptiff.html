@@ -37,6 +37,14 @@
                 padding: 10px;
                 background: rgba(255,255,255,0.2);
             }
+			.legendDiv3 {
+                position: absolute;
+                top: 45px;
+                left: 650px;
+                padding: 1px;
+                background: rgba(255,255,255,0.25);
+				border-radius:40px
+            }
      </style>
   </head>
   <body
@@ -167,6 +175,20 @@ var x=new XMLHttpRequest();
                     }
             }
             x.send();//Sandcastle_End
+
+var y=new XMLHttpRequest();
+            var legendUrl='titre4.czml.legend.html'; // set legend name here
+            y.open('get',legendUrl,true);
+            y.onreadystatechange=function() {
+                if (y.readyState==4)
+                    if (y.status==200) {
+                        var lDiv=document.createElement('div3');
+                        lDiv.className="legendDiv3";
+                        lDiv.innerHTML=y.responseText;
+                        viewer.container.appendChild(lDiv);
+                    }
+            }
+            y.send();
         
 		
         //Reset the scene when switching demos.

@@ -31,6 +31,14 @@
                 padding: 10px;
                 background: rgba(255,255,255,0.2);
             }
+			.legendDiv3 {
+                position: absolute;
+                top: 10px;
+                left: 700px;
+                padding: 4px;
+                background: rgba(255,255,255,0.25);
+				border-radius:40px
+            }
         </style>
   </head>
   <body
@@ -64,7 +72,7 @@ var cv = new Cesium.Viewer("cesiumContainer", {
             // the following section is only needed if you have a legend
             // screen overlay legend
             var x=new XMLHttpRequest();
-            var legendUrl='cz3d.czml.legend.html'; // set legend name here
+            var legendUrl='cz3.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
@@ -76,6 +84,20 @@ var cv = new Cesium.Viewer("cesiumContainer", {
                     }
             }
             x.send();//Sandcastle_End
+
+var y=new XMLHttpRequest();
+            var legendUrl='titre2.czml.legend.html'; // set legend name here
+            y.open('get',legendUrl,true);
+            y.onreadystatechange=function() {
+                if (y.readyState==4)
+                    if (y.status==200) {
+                        var lDiv=document.createElement('div3');
+                        lDiv.className="legendDiv3";
+                        lDiv.innerHTML=y.responseText;
+                        cv.container.appendChild(lDiv);
+                    }
+            }
+            y.send();
     Sandcastle.finishedLoading();
 }
 if (typeof Cesium !== 'undefined') {

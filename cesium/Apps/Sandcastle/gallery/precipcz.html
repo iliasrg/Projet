@@ -38,6 +38,14 @@
                 padding: 10px;
                 background: rgba(255,255,255,0.2);
             }
+			.legendDiv3 {
+                position: absolute;
+                top: 10px;
+                left: 500px;
+                padding: 4px;
+                background: rgba(255,255,255,0.25);
+				border-radius:40px
+            }
         </style>
   </head>
   <body
@@ -93,7 +101,7 @@ Sandcastle.addToolbarButton("Evapotranspiration", function () {
             });
 
 			var x=new XMLHttpRequest();
-            var legendUrl='evapocz.czml.legend.html'; // set legend name here
+            var legendUrl='evapocz2.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
@@ -107,6 +115,20 @@ Sandcastle.addToolbarButton("Evapotranspiration", function () {
             x.send();//Sandcastle_End
           
         });
+
+		var x=new XMLHttpRequest();
+            var legendUrl='titre.czml.legend.html'; // set legend name here
+            x.open('get',legendUrl,true);
+            x.onreadystatechange=function() {
+                if (x.readyState==4)
+                    if (x.status==200) {
+                        var lDiv=document.createElement('div3');
+                        lDiv.className="legendDiv3";
+                        lDiv.innerHTML=x.responseText;
+                        cv.container.appendChild(lDiv);
+                    }
+            }
+            x.send();
 
 		Sandcastle.reset = function () {
           cv.dataSources.removeAll();
