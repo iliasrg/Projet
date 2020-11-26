@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>Précipitations en 2019</title>
+	<title>Precipitations en 2019</title>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo3.png" />
 
@@ -129,14 +129,14 @@ var titre = L.control();
 
 titre.onAdd = function (map) {
   var divTitre = L.DomUtil.create('div', 'titre'); 
-  divTitre.innerHTML = "<h4>Précipitations en 2019</h4>";
+  divTitre.innerHTML = "<h4>Precipitations en 2019</h4>";
   return divTitre;
 };
 
 titre.addTo(map);
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Précipitation en 2019 (mm)</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Precipitation en 2019 (mm)</h4>' +  (props ?
         'Entre : <b>' + props.CLASS + '</sup>'
         : 'Merci de mettre le cursuer sur une zone');
 };
@@ -163,7 +163,7 @@ info.addTo(map);
 
 legend.onAdd = function (map) {
  var divLeg = L.DomUtil.create('div', 'info legend');
- divLeg.innerHTML +='Précipitations (mm) <br> <img  src="images/precip.png"> <br>  Source : EFFIS ';
+ divLeg.innerHTML +='Precipitations (mm) <br> <img  src="images/precip.png"> <br>  Source : EFFIS ';
  return divLeg;
 }; 
 
