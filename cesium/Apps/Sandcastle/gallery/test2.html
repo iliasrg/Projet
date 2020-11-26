@@ -15,7 +15,8 @@
       name="cesium-sandcastle-labels"
       content="Showcases, Tutorials, DataSources"
     />
-    <title>Cesium Demo</title>
+    <title>Temperature</title>
+	<link rel="shortcut icon" type="image/x-icon" href="Logo_iav.png" />
     <script type="text/javascript" src="../Sandcastle-header.js"></script>
     <script
       type="text/javascript"
@@ -23,6 +24,20 @@
       nomodule
     ></script>
     <script type="module" src="../load-cesium-es6.js"></script>
+	<style>
+            @import url(../../../Build/CesiumUnminified/Widgets/widgets.css); 
+            html,body { height: 100%; padding:0; margin:0 }
+            #globe {
+                width: 100%; height: 100%;
+            }
+            .legendDiv {
+                position: absolute;
+                top: 40px;
+                left: 15px;
+                padding: 10px;
+                background: rgba(255,255,255,0.2);
+            }
+     </style>
   </head>
   <body
     class="sandcastle-loading"
@@ -139,6 +154,19 @@ Sandcastle.addDefaultToolbarButton("Decembre", function () {
 );
 });
 
+var x=new XMLHttpRequest();
+            var legendUrl='cztiff.czml.legend.html'; // set legend name here
+            x.open('get',legendUrl,true);
+            x.onreadystatechange=function() {
+                if (x.readyState==4)
+                    if (x.status==200) {
+                        var lDiv=document.createElement('div');
+                        lDiv.className="legendDiv";
+                        lDiv.innerHTML=x.responseText;
+                        viewer.container.appendChild(lDiv);
+                    }
+            }
+            x.send();//Sandcastle_End
         
 		
         //Reset the scene when switching demos.
