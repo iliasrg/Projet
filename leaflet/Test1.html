@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Quick Start - Leaflet</title>
+
+
+	<link rel="stylesheet" href="leaflet.css" />
+	<script src="leaflet.js"></script>
+	<script src="desert2.js"></script>
+	<script src="region_pnt.js"></script>
+	<script src="ligne.js"></script>
+	
+</head>
+<body>
+
+
+<div id="mapid" style="width: 1200px; height: 800px;"></div>
+<script>
+
+	var mymap = L.map('mapid').setView([33.939006, -6.886224], 5);
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(mymap);
+
+	//L.marker([33.976052, -6.866294]).addTo(mymap)
+		//.bindPopup("Bonjour la topo à l'ère COVID :-) ");
+
+	L.circle([51.508, -0.11], 500, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("I am a circle.");
+
+	L.polygon([
+		[33.976052, -6.866294],
+		[33.976684, -6.866643],
+		[33.976606, -6.866702]
+	]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+	// get color depending on population density value
+	function getColor(ggggg) {
+		return ggggg > 500000 ? '#CD5C5C' :
+		       ggggg > 100000 ? '#FA8072' :
+ 							'#FFA07A';
+	}
+
+	// function styleFeature(feature) {
+	// 	return {
+	// 		weight: 2,
+	// 		opacity: 1,
+	// 		color: 'white',
+	// 		dashArray: '3',
+	// 		fillOpacity: 0.7,
+	// 		fillColor: getColor(feature.properties.density)
+	// 	};
+	// }
+	function styleFeature(feature) {
+		return {
+			weight: 2,
+			opacity: 1,
+			color: 'white',
+			dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(feature.properties.Population)
+		};
+	}
+
+		function highlightFeature(e) {
+	    var layer = e.target;
+
+	    layer.setStyle({
+	        weight: 5,
+	        color: '#666',
+	        dashArray: '',
+	        fillOpacity: 0.7
+	    });
+
+	    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+	        layer.bringToFront();
+	    }
+	        info.update(layer.feature.properties);
+
+	}
+
+	function resetHighlight(e) {
+    	geojson.resetStyle(e.target);
+    	    info.update();
+
+	}
+	function zoomToFeature(e) {
+    map.fitBounds(e.target.getBounds());
+    }
+	function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight,
+        click: zoomToFeature
+    });
+    }
+    var info = L.control();
+
+    info.onAdd = function (mymap) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+    };
+
+
+
+
+	L.geoJSON(poly, {
+           
+    }).addTo(mymap);
+
+	function setSizeIcon(attr){
+       return rayon=Math.sqrt(attr)*(20/Math.sqrt(20000));
+	  
+    }
+
+	var regionCentroOpe=L.geoJson(pnt, {
+     pointToLayer: function (feature, latlng) {
+      return L.circleMarker(latlng,{
+        radius : setSizeIcon(feature.properties.D3110), 
+        color : '#005824',
+        fillOpacity: 1,
+        fillColor: '#41AE76'
+      });
+     }
+    }).addTo(mymap);
+
+	/*var geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "#ff7800",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+    };
+
+    L.geoJSON(pnt, {
+     pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+     }
+    }).addTo(mymap);
+	*/
+	//L.geoJSON(pnt, {
+           
+       // }).addTo(mymap);
+
+	//L.geoJSON(lg, {
+           
+       // }).addTo(mymap);
+
+
+	var popup = L.popup();
+
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent("You clicked the map at " + e.latlng.toString())
+			.openOn(mymap);
+	}
+
+	mymap.on('click', onMapClick);
+
+</script>
+
+
+
+</body>
+</html>
