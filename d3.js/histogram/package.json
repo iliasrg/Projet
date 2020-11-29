@@ -1,0 +1,14 @@
+{
+  "name": "@yousrakad/bar-chart",
+  "main": "850299988d8e0fa1@299.js",
+  "version": "299.0.0",
+  "homepage": "https://observablehq.com/@yousrakad/bar-chart",
+  "author": {
+    "name": "yousrakad",
+    "url": "https://observablehq.com/@yousrakad"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

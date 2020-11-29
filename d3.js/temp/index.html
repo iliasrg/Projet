@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>L'évolution de la température du mois de Janvier</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<style>
+.popup .content {
+  position:absolute;
+  top:110%;
+  left:0%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:200%;
+  height:250px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+</style>
+</head>
+<body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
+</script>
+<script>
+setTimeout(function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}, 1);
+</script>
+<div class="popup" id="popup-1">
+  <div class="content"> 
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "@yousrakad/forestloss",
+  "main": "994b286446bd7558@275.js",
+  "version": "275.0.0",
+  "homepage": "https://observablehq.com/@yousrakad/forestloss",
+  "author": {
+    "name": "yousrakad",
+    "url": "https://observablehq.com/@yousrakad"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

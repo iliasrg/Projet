@@ -1,0 +1,14 @@
+{
+  "name": "@yousrakad/levolution-de-la-temperature-du-mois-de-janvier",
+  "main": "616fe81351ef1e45@126.js",
+  "version": "126.0.0",
+  "homepage": "https://observablehq.com/@yousrakad/levolution-de-la-temperature-du-mois-de-janvier",
+  "author": {
+    "name": "yousrakad",
+    "url": "https://observablehq.com/@yousrakad"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
