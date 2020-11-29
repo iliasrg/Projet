@@ -163,7 +163,7 @@ Sandcastle.addDefaultToolbarButton("Decembre", function () {
 });
 
 var x=new XMLHttpRequest();
-            var legendUrl='cztiff.czml.legend.html'; // set legend name here
+            var legendUrl='../../SampleData/cztiff.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
@@ -177,7 +177,7 @@ var x=new XMLHttpRequest();
             x.send();//Sandcastle_End
 
 var y=new XMLHttpRequest();
-            var legendUrl='titre4.czml.legend.html'; // set legend name here
+            var legendUrl='../../SampleData/titre4.czml.legend.html'; // set legend name here
             y.open('get',legendUrl,true);
             y.onreadystatechange=function() {
                 if (y.readyState==4)

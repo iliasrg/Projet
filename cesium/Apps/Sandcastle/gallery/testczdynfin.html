@@ -60,7 +60,7 @@ var cv = new Cesium.Viewer("cesiumContainer");
 
             
             // loading CZML file
-            var czmlUrl='czdyn4.czml'; // set the CZML file name here
+            var czmlUrl='../../SampleData/czdyn4.czml'; // set the CZML file name here
             var c=new Cesium.CzmlDataSource();
             cv.dataSources.add(c);
             c.load(czmlUrl).then(function() {
@@ -70,7 +70,7 @@ var cv = new Cesium.Viewer("cesiumContainer");
             // the following section is only needed if you have a legend
             // screen overlay legend
             var x=new XMLHttpRequest();
-            var legendUrl='czdyn14.czml.legend.html'; // set legend name here
+            var legendUrl='../../SampleData/czdyn14.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
@@ -84,7 +84,7 @@ var cv = new Cesium.Viewer("cesiumContainer");
             x.send();//Sandcastle_End
 
 			var y=new XMLHttpRequest();
-            var legendUrl2='titre3.czml.legend.html'; // set legend name here
+            var legendUrl2='../../SampleData/titre3.czml.legend.html'; // set legend name here
             y.open('get',legendUrl2,true);
             y.onreadystatechange=function() {
                 if (y.readyState==4)

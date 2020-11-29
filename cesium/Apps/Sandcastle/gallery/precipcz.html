@@ -69,7 +69,7 @@ var cv = new Cesium.Viewer("cesiumContainer", {
 
 
 Sandcastle.addDefaultToolbarButton("Precipitations", function () {
-                var czmlUrl='precz.czml'; // set the CZML file name here
+                var czmlUrl='../../SampleData/precz.czml'; // set the CZML file name here
             var c=new Cesium.CzmlDataSource();
             cv.dataSources.add(c);
             c.load(czmlUrl).then(function() {
@@ -77,7 +77,7 @@ Sandcastle.addDefaultToolbarButton("Precipitations", function () {
             });
 
 			var x=new XMLHttpRequest();
-            var legendUrl='precz.czml.legend.html'; // set legend name here
+            var legendUrl='../../SampleData/precz2.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
@@ -93,7 +93,7 @@ Sandcastle.addDefaultToolbarButton("Precipitations", function () {
         });
 
 Sandcastle.addToolbarButton("Evapotranspiration", function () {
-            var czmlUrl='evapcz.czml'; // set the CZML file name here
+            var czmlUrl='../../SampleData/evapcz.czml'; // set the CZML file name here
             var c=new Cesium.CzmlDataSource();
             cv.dataSources.add(c);
             c.load(czmlUrl).then(function() {
@@ -101,7 +101,7 @@ Sandcastle.addToolbarButton("Evapotranspiration", function () {
             });
 
 			var x=new XMLHttpRequest();
-            var legendUrl='evapocz2.czml.legend.html'; // set legend name here
+            var legendUrl='../../SampleData/evapocz2.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
@@ -117,7 +117,7 @@ Sandcastle.addToolbarButton("Evapotranspiration", function () {
         });
 
 		var x=new XMLHttpRequest();
-            var legendUrl='titre.czml.legend.html'; // set legend name here
+            var legendUrl='../../SampleData/titre.czml.legend.html'; // set legend name here
             x.open('get',legendUrl,true);
             x.onreadystatechange=function() {
                 if (x.readyState==4)
