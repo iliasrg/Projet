@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>Incendies de forets</title>
+	<title>Incendies de forêts</title>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo3.png" />
 
@@ -125,15 +125,15 @@ var titre = L.control();
 
 titre.onAdd = function (map) {
   var divTitre = L.DomUtil.create('div', 'titre'); 
-  divTitre.innerHTML = "<h4>Incendies de forets</h4>";
+  divTitre.innerHTML = "<h4>Incendies de forêts</h4>";
   return divTitre;
 };
 
 titre.addTo(map);
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Incendies de forets</h4>' +  (props ?
-        'Region : <b>' + props.NAME + '</b> <br> <br />Superficie incendiee (ha): ' + props.Superficieincendiee + ' </sup> <br> <br />Nombre d incendies :' + props.Nombredincendies + ' </sup>'
+    this._div.innerHTML = '<h4>Incendies de forêts</h4>' +  (props ?
+        'Region : <b>' + props.NAME + '</b> <br> <br />Superficie incendiée (ha): ' + props.Superficieincendiee + ' </sup> <br> <br />Nombre d incendies :' + props.Nombredincendies + ' </sup>'
         : 'Merci de mettre le cursuer sur un Pays');
 };
 
@@ -181,13 +181,13 @@ var incendies
         color : '#005824',
         fillOpacity: 0.7,
         fillColor: '#41AE76'
-      }).bindPopup("Superficie incendiÃ©e (ha): " + feature.properties.Hetares);;
+      }).bindPopup("Superficie incendiée (ha): " + feature.properties.Hetares);;
      }
        })
 
 	   
 L.control.layers({
-  "Nombre d'incendies":incendies, "Superficie incendiee":supf
+  "Nombre d'incendies":incendies, "Superficie incendiée":supf
    }, 
     {
   "Pays":geojson
@@ -203,7 +203,7 @@ L.control.layers({
 
 legend.onAdd = function (map) {
  var divLeg = L.DomUtil.create('div', 'info legend');
- divLeg.innerHTML +='Nombre d incendies <br> <img  src="images/l2.png"> <br> Superficie incendiee <br> <img  src="images/l1.png"> <br>  Source : EFFIS ';
+ divLeg.innerHTML +='Nombre d incendies <br> <img  src="images/l2.png"> <br> Superficie incendiée <br> <img  src="images/l1.png"> <br>  Source : EFFIS ';
  return divLeg;
 }; 
 
