@@ -1,0 +1,58 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.10.6-A Coruña">
+  <identifier>F:/Projet WebMapping/Data/aridité/aridité maroc.shp</identifier>
+  <parentidentifier></parentidentifier>
+  <language>ENG</language>
+  <type>feature</type>
+  <title>Aridity</title>
+  <abstract>L'Atlas mondial de la désertification a été publié par le PNUE en 1992, fruit d'un effort de coopération entre le Centre d'activités du programme de lutte contre la désertification (DC/PAC) du PNUE, le Système mondial de surveillance continue de l'environnement (GEMS) et la Base de données sur les ressources mondiales (GRID). GRID a compilé et/ou dérivé la plupart des bases de données mondiales et régionales, a produit les cartes et a effectué les analyses et les tabulations de données pour l'Atlas, assisté par un groupe consultatif technique sur l'évaluation et la cartographie de la désertification composé de divers experts internationaux. L'atlas comprend des informations et de nombreuses cartes dérivées de l'évaluation mondiale de la dégradation des sols due à l'homme (GLASOD), réalisée en 1990 par le Centre international de référence et d'information pédologique (ISRIC) à Wageningen, aux Pays-Bas, pour le compte du PNUE. Outre les données GLASOD sur la dégradation des sols, et afin de saisir la nature multidimensionnelle des processus de désertification à l'échelle mondiale, d'autres couches de données relatives au climat et à la végétation de la planète ont été compilées par GRID pour être incluses dans l'Atlas mondial de la désertification de 1992. L'ensemble de données NOAA/GVI décrit ici a été créé par GRID-Nairobi comme un produit unique pour l'Atlas de la désertification, afin de représenter les conditions de base ou "normales" de la végétation mondiale, et d'être utilisé en combinaison avec les ensembles de données sur le climat, GLASOD et la dégradation des sols.
+</abstract>
+  <keywords vocabulary="gmd:topicCategory">
+    <keyword>Climatologie/Météorologie/Atmosphère</keyword>
+  </keywords>
+  <contact>
+    <contactAddress>
+      <type>postal</type>
+      <address></address>
+      <city></city>
+      <administrativearea></administrativearea>
+      <postalcode></postalcode>
+      <country></country>
+    </contactAddress>
+    <name>Arcgis</name>
+    <organization></organization>
+    <position></position>
+    <voice></voice>
+    <fax></fax>
+    <email></email>
+    <role>distributor</role>
+  </contact>
+  <links>
+    <link size="" description="" format="" mimeType="" url="https://services6.arcgis.com/C0HVLQJI37vYnazu/arcgis/rest/services/Desertification/FeatureServer" type="ISO 19115:2003/19139" name="indéfini 1"/>
+  </links>
+  <fees></fees>
+  <license>Open Data Commons Open Database License</license>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys>
+      <wkt>PROJCRS["WGS 84 / Pseudo-Mercator",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Popular Visualisation Pseudo-Mercator",METHOD["Popular Visualisation Pseudo Mercator",ID["EPSG",1024]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 85°S to 85°N"],BBOX[-85.06,-180,85.06,180]],ID["EPSG",3857]]</wkt>
+      <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+      <srsid>3857</srsid>
+      <srid>3857</srid>
+      <authid>EPSG:3857</authid>
+      <description>WGS 84 / Pseudo-Mercator</description>
+      <projectionacronym>merc</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial crs="EPSG:3857" miny="2364094.81279999995604157" minz="0" maxx="-91972.70020000000658911" dimensions="2" minx="-2124534.45789999980479479" maxy="4289940.16519999969750643" maxz="0"/>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>
