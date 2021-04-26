@@ -9886,7 +9886,7 @@
 	<decomposition>
 		<IfcProject id="1xS3BCk291UvhgP2a6eflL" Name="0001" LongName="Duplex Apartment" Phase="Project Status">
 			<IfcSite id="1xS3BCk291UvhgP2a6eflN" Name="Default" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT" RefLatitude="41.8744" RefLongitude="-87.639399999722" RefElevation="-0">
-				<IfcBuilding id="1xS3BCk291UvhgP2a6eflK" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT">
+				<IfcBuilding id="1xS3BCk291UvhgP2a6eflK" Name="iliasmod" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT">
 					<IfcBuildingStorey id="1xS3BCk291UvhgP2dvNMKI" Name="Level 1" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT" Elevation="0">
 						<IfcWallStandardCase id="2O2Fr$t4X7Zf8NOew3FNtn" Name="Basic Wall:Exterior - Brick on Block:138062" ObjectType="Basic Wall:Exterior - Brick on Block:130892" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -0 -0.2085 0 1" Tag="138062">
 							<IfcOpeningElement id="1xS3BCk291UvhgP2dvNrrP" Name="M_Fixed:4835mm x 2420mm:4835mm x 2420mm:145788:1" ObjectType="Opening" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 3.548 -0.417 0.1 1">
