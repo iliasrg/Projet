@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifc xmlns:xlink="http://www.w3.org/1999/xlink">
+	<header>
+		<file_description>
+			<description>ViewDefinition [CoordinationView]</description>
+			<implementation_level>2;1</implementation_level>
+		</file_description>
+		<file_name>
+			<author/>
+			<organization/>
+			<name/>
+			<time_stamp>2021-08-25T20:55:18</time_stamp>
+			<preprocessor_version>IFC-manager for SketchUp (3.4.3)</preprocessor_version>
+			<originating_system>SketchUp Pro 2019 (19.2.222)</originating_system>
+			<authorization/>
+		</file_name>
+		<file_schema>
+			<schema_identifiers>IFC2X3</schema_identifiers>
+		</file_schema>
+	</header>
+	<units>
+		<IfcSIUnit UnitType="LENGTHUNIT" Prefix="MILLI" Name="METRE" SI_equivalent="0.001"/>
+		<IfcSIUnit UnitType="AREAUNIT" Name="SQUARE_METRE" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="VOLUMEUNIT" Name="CUBIC_METRE" SI_equivalent="1"/>
+	</units>
+	<properties>
+		<IfcPropertySet id="2I5Gi2nAL9G8brNgFI4jk3" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1LakiFtLv7eeyZLUiT7r4o" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="0A2EaO$556886s2IVSNLhs" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1kEnGIbG97v9GjvVNTUrQR" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status" EnumerationValues="EXISTING"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue="4"/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="2"/>
+			<IfcPropertySingleValue Name="IsExternal" NominalValue="false"/>
+			<IfcPropertySingleValue Name="LoadBearing" NominalValue="false"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3J6wZBPS107QHDH3gDqf1g" Name="Pset_SlabCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="PitchAngle" NominalValue="0"/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1CSPiRpXP5cfd5iZLRS3su" Name="Pset_ColumnCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="Slope" NominalValue="0"/>
+			<IfcPropertySingleValue Name="Roll" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+		</IfcPropertySet>
+		<IfcPropertySet id="01H3INdQT8wxm_9g1hx4Is" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3_FMzFozH8JgE1ozzfO3No" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="276psV1wf1WRCcTAYSvLZL" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3UNIlZ4An62eepyjKs$VVv" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2E6rYtj2D2TOR4P4a8kBTI" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="324zU316TCHOF9euBIwxW2" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2gijOqOQP7_gSSGFeeBDm0" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2oOdukyuT7EAKUtH5_ryUY" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="0w7nzx56bCshNhxXzbljCg" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2i9kzRAgL0uB_YgJKYBs1T" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1FV5f34y58e8Ysv6vD8O8n" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="0c0DEOBfPBHA8sgb5CVFxD" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="00KfcLe4T7oeRgwT$D_0rK" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1XrB_fWhjF9BTARmap$tzy" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3TkyvRtcf8OxZWn3Xithyx" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1cb$wTa4D0gw_EitTSBD84" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3kvxu3K$H6ugzvX3zfR2Sf" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="07c1N2Bcr7xBMKmaaDjBcL" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="19AyY7Yfz9ZxXMRQBip0O2" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="31S7DsgZrFY9_jVRi2wLpI" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2pqRfQZVzFLudYEbEoXulP" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2eN36dkCDAGBddvCrSZ2dB" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3D3lgSSzbDO8mscjnV3iYZ" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2msx96EAX2bA4fgS_ScU4h" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1cWWvXKsDBavj4cuF9TXPT" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1h8A$R$Nz3oAmFYYpe_R5h" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1EN4SdR756XfIaVKBzCe4O" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1SH3wNFsD1iBOVz_jhbXH9" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="1gkEj9hsj7qAOvktFhQsUX" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2Ew4LUWK94XBQqbewp0wVE" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3jSWLv1dX49wc6v2gHAxj0" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+			<IfcPropertySingleValue Name="ExtendToStructure"/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2rNBXIs25B$99Y0SMXB3xu" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3AqyLdRhz2chXPo9E8J6Si" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="2bsSakSjP6o98k8Prw8t$W" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="0QARcTqJD7qhm1KXyhudpO" Name="CompositionType">
+			<IfcPropertySingleValue Name="instanceAttributes" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="IfcElementCompositionEnum"/>
+		</IfcPropertySet>
+		<IfcPropertySet id="3tCcc2DtPB6vHyD00X8a1i" Name="Pset_SlabCommon">
+			<IfcPropertySingleValue Name="Reference" NominalValue=""/>
+			<IfcPropertyEnumeratedValue Name="Status"/>
+			<IfcPropertySingleValue Name="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="PitchAngle" NominalValue="0"/>
+			<IfcPropertySingleValue Name="Combustible"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="Compartmentation"/>
+			<IfcPropertySingleValue Name="IsExternal"/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" NominalValue="0"/>
+			<IfcPropertySingleValue Name="LoadBearing"/>
+		</IfcPropertySet>
+	</properties>
+	<quantities/>
+	<types/>
+	<layers>
+		<IfcPresentationLayerAssignment id="mur - 06" Name="mur - 06"/>
+		<IfcPresentationLayerAssignment id="pilier 06" Name="pilier 06"/>
+		<IfcPresentationLayerAssignment id="dalle 06" Name="dalle 06"/>
+		<IfcPresentationLayerAssignment id="systeme de ventilation" Name="systeme de ventilation"/>
+		<IfcPresentationLayerAssignment id="ep" Name="ep"/>
+		<IfcPresentationLayerAssignment id="systeme d incendie" Name="systeme d incendie"/>
+		<IfcPresentationLayerAssignment id="Layer0" Name="Layer0"/>
+	</layers>
+	<materials>
+		<IfcMaterial id="IfcMaterial_17" Name="Default"/>
+		<IfcMaterial id="IfcMaterial_33" Name="Color A05"/>
+		<IfcMaterial id="IfcMaterial_59" Name="Polished Concrete New"/>
+		<IfcMaterial id="IfcMaterial_117" Name="maconnerie - beton"/>
+		<IfcMaterial id="IfcMaterial_154" Name="Stone Masonry Multi"/>
+		<IfcMaterial id="IfcMaterial_1689" Name="aluminum"/>
+		<IfcMaterial id="IfcMaterial_1907" Name="pvc"/>
+		<IfcMaterial id="IfcMaterial_5205" Name="acier"/>
+	</materials>
+	<decomposition>
+		<IfcProject id="0iYiJ1tC5AO9GM7r0yVRR$" Name="Default Project" Description="Description of Default Project">
+			<IfcSite id="3_0eG2qZz6O8eX$tA3ea0C" Name="site" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11150.1 0 1" LongName="Hotel RMC" CompositionType="COMPLEX" RefElevation="45" LandTitleNumber="">
+				<IfcBuilding id="3m4mbfhL52$9c7wGXen5_0" Name="building" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11150.1 0 1" LongName="" CompositionType="COMPLEX" ElevationOfRefHeight="0" ElevationOfTerrain="0">
+					<IfcBuildingStorey id="1BkPKhTz948Pb1zV3XkKTi" Name="building storey" Description="Etage 06 - chambre Luxe 612" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11150.1 0 1" LongName="Chambre" CompositionType="COMPLEX" Elevation="0">
+						<IfcWall id="1NhVvB9dL4zOaCZB92epB6" Name="Mur - Beton coule sur place#5" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -4098.35 -11020 400 1" Tag="">
+							<IfcPropertySet xlink:href="#2I5Gi2nAL9G8brNgFI4jk3"/>
+							<IfcPropertySet xlink:href="#1LakiFtLv7eeyZLUiT7r4o"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcWall id="3huiycra51n8KZjaE00Yqu" Name="Mur - Beton coule sur place#7" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2568.13 -11020 400 1" Tag="">
+							<IfcPropertySet xlink:href="#0A2EaO$556886s2IVSNLhs"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_117"/>
+						</IfcWall>
+						<IfcWall id="2DJ1bgV9LAifgEroUkzsYa" Name="Mur - Brique#2" Description="Mur - Brique 200 mm + isolant" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -386.804 -7390.46 400 1" Tag="">
+							<IfcPropertySet xlink:href="#1kEnGIbG97v9GjvVNTUrQR"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcColumn id="0DON_6Yw52NAfdZn19$6tg" Name="Pilier beton #4" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2818.13 -11150.1 400 1">
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcSlab id="2LwSOwryn0DfmdLjj9kiNU" Name="Dalle en beton - 400 mm" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11149.4 0 1" Tag="" PredefinedType="NOTDEFINED">
+							<IfcPropertySet xlink:href="#3J6wZBPS107QHDH3gDqf1g"/>
+							<IfcPresentationLayerAssignment xlink:href="#dalle 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcSlab>
+						<IfcColumn id="3czBh89SH5f8HfuLycFdfB" Name="Pilier beton #3" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -336.545 -11149.4 400 1">
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcColumn id="0aDVdJiJ15khqH71O4G5XF" Name="Pilier beton #6" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -386.775 -385.493 400 1" Tag="">
+							<IfcPropertySet xlink:href="#1CSPiRpXP5cfd5iZLRS3su"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcWall id="3M1FG_sDD2SAyicwMcpZ4d" Name="Mur - Beton coule sur place#10" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -386.804 -10850 400 1">
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcColumn id="2v5DFtChzFEuS0Z4mLYJBW" Name="Pilier beton #2" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -976.361 -7790.82 400 1">
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcWall id="0LYDjvyGr7ZfG_Ne6ZEFwq" Name="Mur - Beton coule sur place#2" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6886.36 -4928.15 400 1" Tag="">
+							<IfcPropertySet xlink:href="#01H3INdQT8wxm_9g1hx4Is"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcWall id="2ABp2f8uz8lvW9eZfp1$AQ" Name="Mur - Beton coule sur place#8" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6637.03 -11150.1 3100 1" Tag="">
+							<IfcPropertySet xlink:href="#3_FMzFozH8JgE1ozzfO3No"/>
+							<IfcPropertySet xlink:href="#276psV1wf1WRCcTAYSvLZL"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcColumn id="2ao6U7TnnFmwYAvwPaYeL6" Name="building element" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6885.39 -5028.15 400 1" Tag="">
+							<IfcPropertySet xlink:href="#3UNIlZ4An62eepyjKs$VVv"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcWall id="0lEx8P1dzApe1tOTdk4ucv" Name="Mur - Brique#11" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -976.361 -385.493 400 1">
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcColumn id="20h9Y6pGj1OuDXXEc_2rAU" Name="Pilier beton #5" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -3596.78 -11150.1 400 1">
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcWall id="3dtyAVCMHB_8r$DAYbGIF6" Name="Mur - Beton coule sur place#6" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6637.03 -11020 400 1" Tag="">
+							<IfcPropertySet xlink:href="#2E6rYtj2D2TOR4P4a8kBTI"/>
+							<IfcPropertySet xlink:href="#324zU316TCHOF9euBIwxW2"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcColumn id="1goYhdXPXAyBny$lUh0oQX" Name="building element" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11150.1 400 1" Tag="">
+							<IfcPropertySet xlink:href="#2gijOqOQP7_gSSGFeeBDm0"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcWall id="3syu$Fyxz73QvKqi6NLytl" Name="Mur - Beton coule sur place#11" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2568.13 -11020 400 1" Tag="">
+							<IfcPropertySet xlink:href="#2oOdukyuT7EAKUtH5_ryUY"/>
+							<IfcPropertySet xlink:href="#0w7nzx56bCshNhxXzbljCg"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcWall id="1n086OcSLB7B$ohLjNjjKV" Name="Mur - Beton coule sur place#9" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2568.13 -11150.1 3100 1">
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcWall id="3oj7tOIWX9VBT9HwgPCejL" Name="Mur - Brique#3" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -876.361 -1090.06 400 1" Tag="">
+							<IfcPropertySet xlink:href="#2i9kzRAgL0uB_YgJKYBs1T"/>
+							<IfcPropertySet xlink:href="#1FV5f34y58e8Ysv6vD8O8n"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcColumn id="36asr0KYfFC9O59nFvj5qZ" Name="building element" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -1013.18 -1090.06 400 1" Tag="">
+							<IfcPropertySet xlink:href="#0c0DEOBfPBHA8sgb5CVFxD"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcColumn id="2CrA39sHz83OC9WHDpKcTD" Name="building element" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2628.03 -1090.09 400 1" Tag="">
+							<IfcPropertySet xlink:href="#00KfcLe4T7oeRgwT$D_0rK"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcColumn id="1WSF_AVnb1UgIrtd$_E2Ah" Name="building element" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2826.15 -1090.09 400 1" Tag="">
+							<IfcPropertySet xlink:href="#1XrB_fWhjF9BTARmap$tzy"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcColumn id="2kUTk5rYH2KuFElGLkFkCE" Name="building element" Description="Pilier - Beton arme " ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -4408.13 -11150.1 400 1" Tag="">
+							<IfcPropertySet xlink:href="#3TkyvRtcf8OxZWn3Xithyx"/>
+							<IfcPresentationLayerAssignment xlink:href="#pilier 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcColumn>
+						<IfcWall id="1p413jQaX8nh1zNBn5YSm8" Name="Mur - Beton coule sur place#3" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6885.39 -10850 400 1" Tag="">
+							<IfcPropertySet xlink:href="#1cb$wTa4D0gw_EitTSBD84"/>
+							<IfcPropertySet xlink:href="#3kvxu3K$H6ugzvX3zfR2Sf"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcWall id="2t36k6Ckv8VgxE_KRz7t7x" Name="Mur - Beton coule sur place#4" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -3346.78 -11020 400 1" Tag="">
+							<IfcPropertySet xlink:href="#07c1N2Bcr7xBMKmaaDjBcL"/>
+							<IfcPropertySet xlink:href="#19AyY7Yfz9ZxXMRQBip0O2"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcWall>
+						<IfcWall id="1c9YpTKfP0_hiEWya22Vi$" Name="Mur - Brique#5" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2740.93 -818.981 399.997 1" Tag="">
+							<IfcPropertySet xlink:href="#31S7DsgZrFY9_jVRi2wLpI"/>
+							<IfcPropertySet xlink:href="#2pqRfQZVzFLudYEbEoXulP"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcWall id="1RUSRvRZnFDwPbKsr_QRQY" Name="Mur - Brique#4" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -5605.65 -258.732 399.997 1">
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcWall id="29WEX_XdH8o84zGDZaqviK" Name="Mur - Brique#6" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -5772.58 -1853.71 399.994 1" Tag="">
+							<IfcPropertySet xlink:href="#2eN36dkCDAGBddvCrSZ2dB"/>
+							<IfcPropertySet xlink:href="#3D3lgSSzbDO8mscjnV3iYZ"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcWall id="144RNa$MX9rghcWzH7YmbU" Name="Mur - Brique#7" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6686.37 -2013.71 399.994 1" Tag="">
+							<IfcPropertySet xlink:href="#2msx96EAX2bA4fgS_ScU4h"/>
+							<IfcPropertySet xlink:href="#1cWWvXKsDBavj4cuF9TXPT"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcWall id="2QwevkWRL2zQ7aIPIROEHY" Name="Mur - Brique#8" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -6686.36 -4966.86 399.984 1" Tag="">
+							<IfcPropertySet xlink:href="#1h8A$R$Nz3oAmFYYpe_R5h"/>
+							<IfcPropertySet xlink:href="#1EN4SdR756XfIaVKBzCe4O"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcWall id="3wSJ0kBMz85vuS8Du_ycQ_" Name="Mur - Brique#9" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2733.42 -4996.69 -3.60956e-13 1" Tag="">
+							<IfcPropertySet xlink:href="#1SH3wNFsD1iBOVz_jhbXH9"/>
+							<IfcPropertySet xlink:href="#1gkEj9hsj7qAOvktFhQsUX"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcWall id="2sHxEIveLBHQVYkiBMGV0N" Name="Mur - Brique#10" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -2627.72 -2691.96 399.992 1" Tag="">
+							<IfcPropertySet xlink:href="#2Ew4LUWK94XBQqbewp0wVE"/>
+							<IfcPropertySet xlink:href="#3jSWLv1dX49wc6v2gHAxj0"/>
+							<IfcPresentationLayerAssignment xlink:href="#mur - 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_154"/>
+						</IfcWall>
+						<IfcEquipmentElement id="0bv71aP4z5Uh0GTfaftc6O" Name="Conduit de ventilation" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -3010.57 -4049.85 2984.8 1" Tag="">
+							<IfcPresentationLayerAssignment xlink:href="#systeme de ventilation"/>
+							<IfcMaterial xlink:href="#IfcMaterial_1689"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="0pBq097Uz0GwmGxwyvSNZW" Name="Tuyau EP#2" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -3381.19 -3042.41 3280.28 1" Tag="">
+							<IfcPresentationLayerAssignment xlink:href="#ep"/>
+							<IfcMaterial xlink:href="#IfcMaterial_1907"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="2s_1c8ECr90Rn2U4ELXwO$" Name="Tuyau EP#3" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -1824.54 -3042.87 3282.52 1" Tag="">
+							<IfcPresentationLayerAssignment xlink:href="#ep"/>
+							<IfcMaterial xlink:href="#IfcMaterial_1907"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="3uP8XUxbPBguufJq$QH0I_" Name="Tuyau EP" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 0.999572 -0.0292671 0 0 0.0292671 0.999572 0 -1782.39 -2975.85 3288.1 1" Tag="">
+							<IfcPresentationLayerAssignment xlink:href="#ep"/>
+							<IfcMaterial xlink:href="#IfcMaterial_1907"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="11voAI_br14e8pFvdSHlVv" Name="Tuyau en acier#6" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 0.999939 -0.0110367 0 0 0.0110367 0.999939 0 -5247.02 -9021.3 3057.72 1" Tag="">
+							<IfcPropertySet xlink:href="#2rNBXIs25B$99Y0SMXB3xu"/>
+							<IfcPresentationLayerAssignment xlink:href="#systeme d incendie"/>
+							<IfcMaterial xlink:href="#IfcMaterial_5205"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="0pMI2yh6r9H99pn3j$gyuj" Name="Tuyau en acier#2" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 0.999939 -0.0110367 0 0 0.0110367 0.999939 0 -2154.99 -8699.74 3121.82 1" Tag="">
+							<IfcPropertySet xlink:href="#3AqyLdRhz2chXPo9E8J6Si"/>
+							<IfcPresentationLayerAssignment xlink:href="#systeme d incendie"/>
+							<IfcMaterial xlink:href="#IfcMaterial_5205"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="25EQoFGwD8uexS_emumvga" Name="Tuyau en acier#3" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 0.999939 -0.0110367 0 0 0.0110367 0.999939 0 -5234.36 -6175.87 3169.88 1" Tag="">
+							<IfcPropertySet xlink:href="#2bsSakSjP6o98k8Prw8t$W"/>
+							<IfcPresentationLayerAssignment xlink:href="#systeme d incendie"/>
+							<IfcMaterial xlink:href="#IfcMaterial_5205"/>
+						</IfcEquipmentElement>
+						<IfcEquipmentElement id="3uZ81gXwT4NeeeUXauL200" Name="Tuyau en acier#7" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 0.999939 -0.0110367 0 0 0.0110367 0.999939 0 -6742.48 633.444 2919.13 1" Tag="">
+							<IfcPropertySet xlink:href="#0QARcTqJD7qhm1KXyhudpO"/>
+							<IfcPresentationLayerAssignment xlink:href="#systeme d incendie"/>
+							<IfcMaterial xlink:href="#IfcMaterial_5205"/>
+						</IfcEquipmentElement>
+						<IfcMaterial xlink:href="#IfcMaterial_33"/>
+					</IfcBuildingStorey>
+					<IfcBuildingStorey id="0iIcaSSi12CvLah40ODU70" Name="etage 07" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11149.4 3320 1" LongName="" CompositionType="COMPLEX" Elevation="3320">
+						<IfcSlab id="1JQtiZlobFBgVZvkTY$619" Name="Dalle en beton - 400 mm" Description="" ObjectType="" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 -7037.03 -11149.4 3320 1" Tag="" PredefinedType="NOTDEFINED">
+							<IfcPropertySet xlink:href="#3tCcc2DtPB6vHyD00X8a1i"/>
+							<IfcPresentationLayerAssignment xlink:href="#dalle 06"/>
+							<IfcMaterial xlink:href="#IfcMaterial_59"/>
+						</IfcSlab>
+						<IfcMaterial xlink:href="#IfcMaterial_17"/>
+					</IfcBuildingStorey>
+					<IfcPresentationLayerAssignment xlink:href="#Layer0"/>
+					<IfcMaterial xlink:href="#IfcMaterial_17"/>
+				</IfcBuilding>
+				<IfcMaterial xlink:href="#IfcMaterial_17"/>
+			</IfcSite>
+		</IfcProject>
+	</decomposition>
+</ifc>
